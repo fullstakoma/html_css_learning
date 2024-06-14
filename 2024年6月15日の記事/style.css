@@ -1,0 +1,56 @@
+/* 全ての要素のデフォルトのマージンとパディングをリセットするため*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  font-size: 30px;
+  text-align: center;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+
+.class_companyinfo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.class_companyinfo a {
+  font-size: 20px;
+  margin: 10px;
+}
+
+.container {
+  /* display flexで横並びを作ってる */
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+/* 横並びの項目のスタイル */
+.horizontal-item {
+  padding: 10px;
+}
+
+.horizontal-item h2 {
+  text-align: center;
+}
+
+/* 縦並びの項目のスタイル */
+.vertical-list {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  padding: 0;
+}
+
+.vertical-list li {
+  margin: 5px 0;
+}
+
+footer {
+  text-align: center;
+}
