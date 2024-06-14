@@ -1,0 +1,77 @@
+header,
+h1,
+p,
+li {
+  font-family: sans-serif;
+  color: #444;
+}
+
+/*グループに分ける事もできるよ*/
+header,
+h1 {
+  font-weight: bold;
+}
+
+header {
+  font-size: 30px;
+}
+
+h1 {
+  font-size: 20px;
+  text-transform: uppercase;
+  font-style: italic;
+  border-top: 5px solid #1098ad;
+  border-bottom: 5px solid #1098ad;
+}
+
+p {
+  font-size: 14px;
+  line-height: 1.5;
+}
+/*これはidを定義している*/
+#special {
+  font-weight: bold;
+  color: green;
+}
+/*これはclassを定義していて箇条書きの点を無くしている*/
+.lists {
+  list-style: none;
+}
+
+li:first-child {
+  font-weight: bold;
+}
+
+li:last-child {
+  font-style: italic;
+  color: red;
+}
+
+article p :last-child {
+  color: blue;
+}
+
+article {
+  background-color: blanchedalmond;
+}
+
+/*リンクも定義できるよ*/
+a:link {
+  color: #444;
+  text-decoration: none;
+}
+
+a:visited {
+  color: lightblue;
+}
+
+a:hover {
+  color: orangered;
+  font-weight: bold;
+  text-decoration: underline orangered;
+}
+
+a:active {
+  background-color: black;
+  font-style: italic;
+}
