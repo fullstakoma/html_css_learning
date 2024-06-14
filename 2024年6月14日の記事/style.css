@@ -1,3 +1,5 @@
+/*CSSではこのようにコメントを書くよ*/
+
 header,
 h1,
 p,
@@ -29,12 +31,12 @@ p {
   line-height: 1.5;
 }
 /*これはidを定義している*/
-#special {
+#idexample {
   font-weight: bold;
   color: green;
 }
 /*これはclassを定義していて箇条書きの点を無くしている*/
-.lists {
+.classexample {
   list-style: none;
 }
 
