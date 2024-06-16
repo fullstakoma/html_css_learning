@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Grid</title>
+  </head>
+  <style>
+    header {
+      font-size: 40px;
+      font-family: sans-serif;
+      text-align: center;
+    }
+
+    .class_container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: 240px 240px;
+      justify-content: center;
+      align-content: center;
+      align-items: center;
+      justify-items: center;
+    }
+
+    .class_container img {
+      width: 120px;
+      height: auto;
+    }
+  </style>
+  <body>
+    <header>CSSで配置について学ぼう</header>
+    <div class="class_container">
+      <div><img src="img/european_man.jpg" /></div>
+      <div><img src="img/asia_woman.jpg" /></div>
+      <div><img src="img/african_woman.jpg" /></div>
+      <div><img src="img/asia_man.jpg" /></div>
+      <div><img src="img/african_man.jpg" /></div>
+      <div><img src="img/european_woman.jpg" /></div>
+    </div>
+  </body>
+</html>
