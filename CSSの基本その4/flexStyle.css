@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  color: #4d4b4b;
+  border-bottom: #087f5b;
+}
+
+.flexsample {
+  width: 700px;
+  margin: 100px auto;
+  box-shadow: 0 0 32px rgba(0, 0, 0, 0.1);
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  border-top-color: #087f5b;
+}
+.item {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  column-gap: 24px;
+  row-gap: 32px;
+  align-items: center;
+}
+.number,
+.text {
+  font-size: 24px;
+  font-weight: 500;
+  color: #087f5b;
+}
+.icon {
+  width: 24px;
+  height: 24px;
+  stroke: #087f5b;
+}
