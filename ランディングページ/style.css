@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  color: #444;
+}
+
+header {
+  height: 100vh;
+  /*headerが親である*/
+  position: relative;
+  background-image: linear-gradient(
+      rgba(100, 100, 100, 0.6),
+      rgba(30, 30, 30, 0.6)
+    ),
+    url(supercar.png);
+  background-size: cover;
+  color: #fff;
+}
+
+nav {
+  height: 200px;
+  font-size: 30px;
+  font-weight: 700;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 32px;
+  background-color: rgb(0, 0, 0, 0.4);
+}
+/*ロゴの定義*/
+nav:first-child img {
+  height: 160px;
+  margin-left: 24px;
+}
+
+.logo_email {
+  stroke: #fff;
+  height: 48px;
+  margin-right: 24px;
+}
+
+.header-container {
+  padding-top: 23px;
+  width: 800px;
+  position: absolute;
+  /*headerという親に対する位置関係*/
+  left: 20%;
+  top: 20%;
+}
+
+.header-container-inner {
+  width: 70%;
+}
+
+h1 {
+  font-size: 52px;
+  margin-bottom: 32px;
+  line-height: 1.1;
+  color: rgb(195, 161, 118);
+  -webkit-text-stroke: 2px #fff;
+}
+
+.header-container-inner p {
+  font-family: "Gravitas One";
+  font-size: 20px;
+  margin-bottom: 32px;
+  line-height: 1.5;
+  margin-bottom: 32px;
+}
+
+.btn:link,
+.btn:visited {
+  font-size: 20px;
+  font-weight: 600;
+  background-color: rgb(255, 184, 92);
+  color: #fff;
+  text-decoration: double;
+  display: inline-block;
+  padding: 12px 24px;
+  border-radius: 20px;
+}
+
+h2 {
+  font-size: 44px;
+  margin-bottom: 32px;
+}
+p {
+  font-size: 20px;
+  margin-bottom: 32px;
+  line-height: 1.5;
+  margin-bottom: 32px;
+}
+
+section {
+  margin: 32px;
+  padding: 96px, 0;
+}
+
+footer {
+  height: 60px;
+  width: auto;
+  background-color: #ffe0c4;
+  position: relative;
+}
+
+.footer-container {
+  font-size: 12px;
+  position: absolute;
+  height: 12px;
+  top: 20%;
+  left: 40%;
+}

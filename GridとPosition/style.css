@@ -1,0 +1,161 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  color: #1f1f1f;
+  font-size: 24px;
+  height: 100vh;
+  text-align: center;
+  display: grid;
+  grid-template-columns: 80px 300px 1fr 300px;
+  grid-template-rows: 80px 1fr;
+}
+
+nav,
+section,
+main,
+aside {
+  padding: 12px;
+}
+
+nav {
+  background-color: #4a7777;
+  grid-row: 1/-1;
+  color: #fff;
+}
+
+menu {
+  background-color: #72b7b7;
+  grid-column: 2/-1;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 0 40px;
+}
+
+button {
+  background-color: #6aabab;
+  height: 40px;
+  width: 100px;
+  text-align: center;
+  color: #fff;
+  font-size: 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+button svg {
+  height: 40px;
+  width: auto;
+  stroke: #fff;
+}
+
+button:last-child {
+  color: burlywood;
+  margin-left: auto;
+  background-color: transparent;
+}
+
+section {
+  background-color: #fff;
+  padding: 40px;
+  overflow: scroll;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+aside {
+  background-color: #cecdcd;
+  padding-top: 24px;
+}
+
+.icon_customersupport img {
+  height: 48px;
+  width: auto;
+  stroke: #fff;
+}
+
+.navi_icons svg {
+  height: 48px;
+  width: auto;
+  margin-bottom: 20px;
+}
+
+.separate_navi {
+  margin-top: 60px;
+}
+
+.container_message {
+  background-color: #d1d1d1;
+  border-color: #1f1f1f;
+  height: 60px;
+  width: 220px;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.p_subject {
+  display: flex;
+  font-size: 24px;
+  text-align: left;
+  justify-content: center;
+  position: absolute;
+  transform: translate(-140%, 10%);
+}
+
+.p_message {
+  margin-left: 10px;
+  display: flex;
+  font-size: 12px;
+  text-align: left;
+  justify-content: center;
+  position: absolute;
+  transform: translate(0%, 100%);
+}
+
+.container_fullmessage {
+  height: 400px;
+  width: 1fr;
+  background-color: #fcfcfc;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  padding: 12px;
+}
+
+.fullmessage_container1 {
+  grid-row: 1/2;
+  grid-column: 1/2;
+  margin: 20px;
+  background-color: red;
+}
+
+.fullmessage_container2 {
+  grid-row: 1/2;
+  grid-column: 2/3;
+  margin: 20px;
+  background-color: blue;
+}
+
+.fullmessage_container3 {
+  grid-row: 2/3;
+  grid-column: 1/2;
+  margin: 20px;
+  background-color: green;
+}
+
+.fullmessage_container4 {
+  grid-row: 2/3;
+  grid-column: 2/3;
+  margin: 20px;
+  background-color: yellow;
+}
